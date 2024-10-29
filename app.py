@@ -1,10 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 import requests
-from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-CORS(app)
 API_KEY = os.getenv("API_KEY")
 EXTERNAL_USER_ID = 'your_external_user_id_here'  # Replace with actual external user ID
 
