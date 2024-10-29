@@ -1,0 +1,4 @@
+Flask
+requests
+gunicorn
+python-dotenv  # If you're using a .env file for sensitive information
