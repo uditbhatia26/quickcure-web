@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 CORS(app)
-API_KEY = 'rJkTxP36ksBIeAzvfIw9nYpTcXXxjBOp'
+API_KEY = os.getenv("API_KEY")
 EXTERNAL_USER_ID = 'your_external_user_id_here'  # Replace with actual external user ID
 
 @app.route('/')
